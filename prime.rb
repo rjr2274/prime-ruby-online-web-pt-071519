@@ -10,9 +10,8 @@ require "pry"
 
 def prime?(num)
   set = (2..num).to_a
-  false if num < 1
   set.each do |i|
-    if num != i && num % i == 0
+    if num != i && num % i == 0 && num <2
       return false
     end
   end
