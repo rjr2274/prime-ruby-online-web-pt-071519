@@ -10,5 +10,11 @@ require "pry"
 
 def prime?(num)
   set = (2..num).to_a
+
+  set.each do |i|
+    if num != i && num % i == 0
+      return false
+  end
+  return true
 end
 binding.pry
