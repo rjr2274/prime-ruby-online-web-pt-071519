@@ -14,6 +14,7 @@ def prime?(num)
   set.each do |i|
     if num != i && num % i == 0
       return false
+    end
   end
   return true
 end
