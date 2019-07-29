@@ -9,7 +9,7 @@ require "pry"
 # binding.pry
 
 def prime?(num)
-  return false if num < 1
+  return false if num <= 1
   set = (2..num).to_a
   set.each do |i|
     if num != i && num % i == 0
